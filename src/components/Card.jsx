@@ -10,7 +10,7 @@ const Card = () => {
   useEffect(() => {
     const fetchCards = async () => {
       try {
-        const response = await axios.get('https://cards-two-orpin.vercel.app/cards');
+        const response = await axios.get('http://localhost:5000/api/cards');
         setCards(response.data);
       } catch (err) {
         console.error(err);
